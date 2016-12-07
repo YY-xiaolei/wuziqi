@@ -1,0 +1,230 @@
+
+#shouye{
+	position:fixed;
+	top:10px;
+	left:0;
+	right:0;
+	bottom:10px;
+	background: url(../img/kaishi1.png) no-repeat center center;
+	animation: yiru 1s 1;
+	cursor: pointer;
+}
+@keyframes yiru{
+	from{
+		transform: rotate(0deg) scale(0);
+	}
+	to{
+		transform: rotate(1080deg) scale(1);
+	}
+}
+.kuang{
+	width: 80px;
+	height: 270px;
+	border:1px solid #070407;
+	border-radius: 20px;
+	position: absolute;
+	right:0px;
+	left:0px;
+	top:0;
+	bottom:0;
+	/*top:14px*/
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	cursor: pointer;
+	opacity: 0;
+}
+.kuang:hover{
+	opacity: 1;
+}
+#bg{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width: 100%;
+	background: #f5f5f5 url(../img/bgimg.jpg) no-repeat center 20px;
+	z-index: -100;
+	display: none;
+}
+.contain{
+	width: 100%;
+	height:100%;
+	position: relative;
+	display: none;
+}
+.zuo{
+	width: 200px;
+	height: 600px;
+	border:1px solid #90727c;
+	position: absolute;
+	top:0px;
+	left:-220px;
+}
+#img1{
+	width: 100%;
+	height: 70px;
+	background: url(../img/heiqi.png) no-repeat 75px 14px; 
+	background-color: rgba(218,165,32,0.1) ;
+	display: block;
+}
+#img2{
+	width: 100%;
+	height: 70px;
+	background: url(../img/baiqi.png) no-repeat 75px 14px;
+	background-color: rgba(218,165,32,0.1) ;
+	display: block;
+}
+.sound{
+	width: 100%;
+	height: 50px;
+	background-color: rgba(218,165,32,0.1) ;
+	margin-top:35px;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+}
+h2{
+	width: 150px;
+	height: 50px;
+	background-color: rgba(218,165,32,0.1) ;
+	border-radius:20px;
+	text-align: center;
+    line-height: 50px;
+    font-size:26px;
+    font-family: "华文行楷";
+    box-shadow: 2px 2px 4px rgba(167,60,42,0.3);
+    margin-left: 25px;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+h2:hover{
+   background: rgba(7,115,245,0.5);
+}
+.first{
+	background: rgba(7,115,245,0.5);
+}
+.mar{
+	margin-top: 32px;
+}
+.you{
+	width: 200px;
+	height: 600px;
+	border:1px solid #90727c;
+	position: absolute;
+	top:0px;
+	right:-220px;
+}
+.zhong{
+	width:600px;
+	height: 600px;
+	position: absolute;
+	left:0;
+	right:0;
+	top:20px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#canvas{
+	display: block;
+	border:1px solid #90727c;
+	background: rgba(218,165,32,0.1);
+}
+.biao{
+	/*border:1px solid #000;*/
+	border-radius: 50%;
+	margin-left: 25px;
+	margin-top: 35px;
+	background-color: rgba(218,165,32,0.1);
+	background: url(../img/bp.png) no-repeat center center;
+}
+
+
+#tanH,.tanH{
+	width:400px;
+	height: 300px;
+	position:absolute;
+	top:150px;
+	left: 100px;
+	background: rgba(245,237,216,0.9);
+	border-radius: 20px;
+	box-shadow: 3px 3px 5px rgba(162,155,155,0.7);
+	z-index: 300;
+	display: none;
+	/*transition: all 0.8s linear;
+	transform: translateY(-1000px);*/
+
+}
+.text{
+   text-align: center;
+   font-size: 28px;
+   font-family: "楷体";
+   font-weight: 600;
+   display: block;
+   margin-top: 30px;
+}
+.victory{
+   font-size: 40px;
+   font-family: "华文行楷";
+   color:red;
+   font-weight: 600;
+   display: none;
+}
+.tan_style{
+	margin-left: 118px;
+	margin-top: 30px;
+}
+.close1{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 50%;
+	background: #000;
+	right: -15px;
+	top:-15px;
+	color: #fff;
+	cursor: pointer;
+}
+.active1{
+	transform: translateY(0px);
+}
+.box{
+	width:600px;
+	height: 600px;
+	position: absolute;
+	left:0px;
+	top:0px;
+	z-index: 2000;
+	display: none;
+	background:#fff ;
+	box-shadow: 0 0 0 1000px rgba(0,0,0,0.7);
+}
+.close{
+	width: 30px;
+	height: 30px;
+	background: #000;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 30px;
+	position:absolute;
+	top:-15px;
+	right:-15px;
+	color:#fff;
+	font-weight: 500;
+	cursor: pointer;
+}
+img{
+	width: 100%;
+}
+a{
+	position: absolute;
+	left:0px;
+	top:0px;
+	width: 600px;
+	height: 600px;
+	display: block;
+}

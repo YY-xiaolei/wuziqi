@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>五子棋小游戏</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<style>
+			@font-face {
+			  font-family: 'iconfont';
+			  src: url('icon/font_tnjohgrgohzd7vi/iconfont.eot');
+			  src: url('icon/font_tnjohgrgohzd7vi/iconfont.eot?#iefix') format('embedded-opentype'),
+			  url('icon/font_tnjohgrgohzd7vi/iconfont.woff') format('woff'),
+			  url('icon/font_tnjohgrgohzd7vi/iconfont.ttf') format('truetype'),
+			  url('icon/font_tnjohgrgohzd7vi/iconfont.svg#iconfont') format('svg');
+			}
+			.iconfont{
+				font-family: 'iconfont';
+				font-size: 24px;
+				color: #312b2e;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div id="shouye">
+			<!--<div class="kuang"></div>-->
+		</div>
+		<div id="bg"></div>
+		<div class="contain">
+			
+			<div class="zhong">
+				<div class="zuo">
+					<div id="img1"></div>
+					<canvas width="150" height="150" class="biao hei"></canvas>
+					<div class="sound iconfont"><!--&#xe661;--></div>
+					<h2 class="mar start">开始游戏</h2>
+					<h2 class="check">查看棋谱</h2>
+					<h2 class="tuichu">退出游戏</h2>
+					
+				</div>
+				
+				
+				<canvas width="600" height="600" id="canvas"></canvas>
+			    <audio src="music/music.mp3" id="audio1"></audio>
+			    <audio src="music/yinyue.mp3" id="audio2" loop="loop"></audio>
+			    <div class="you">
+			    	<div id="img2"></div>
+					<canvas width="150" height="150" class="biao bai"></canvas>
+				    <div class="sound iconfont">&#xe600;</div>
+				    <h2 class="mar guize">游戏规则</h2>
+					<h2 class="computer">玩家-玩家</h2>
+					<h2 class="people">玩家-电脑</h2>
+					
+			    </div>
+			    
+			    <div id="tanH">
+			    	<span class="text">黑棋赢</span>
+			    	<h2 class="again tan_style">再来一局</h2>
+			    	<h2 class="tuichu tan_style">退出游戏</h2>
+			    </div>
+			    
+			    <div class="tanH">
+			    	<p>1、 黑先、白后，从天元开始相互顺序落子；</p>
+			    	<p>2、最先在棋盘横向、纵向或斜向形成连续的同色五个棋子的一方为胜； </p>
+			    	<p>3、无禁手规则:(本游戏中心的就是这种规则,适用于初学者) 　　黑白双方依次落子，由黑先下，当棋盘上有三个子时(两黑一白),如果此时白方觉得开的局不利于自已可以提出交换,黑方无条件接受!也可以不交换,主动权在白方!然后继续下棋,任一方先在棋盘上形成横向、竖向、斜向的连续的相同颜色的五个(含五个以上)棋子的一方为胜；</p>
+			        <p>4、禁手规则 　　禁手是针对黑棋而言的，禁手是指一手黑棋棋形成：双活三，双四，长连(五子以上)为输!这种方法限制了黑棋先行的优势！禁手对白棋无效。</p>
+			        <div class="close1">x</div>
+			    </div>
+			    <div class="box">
+			    	<div class="close">x</div>
+			    </div>
+				
+			</div>
+			
+			
+		</div>
+		
+		
+	</body>
+</html>
+<script src="js/jquery.js"></script>
+<script src="js/index.js"></script>
